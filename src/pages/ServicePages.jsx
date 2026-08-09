@@ -26,8 +26,8 @@ export function ServiceDetail() {
     '@graph': [
       { '@type': 'Service', name: service.title, description: service.overview, provider: { '@type': 'Organization', name: 'Serenity Home Care' }, areaServed: 'Dayton, Ohio' },
       { '@type': 'BreadcrumbList', itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://mspixelpulse-demo-home-care.vercel.app/' },
-        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://mspixelpulse-demo-home-care.vercel.app/services' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serenityhomecare.vercel.app/' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://serenityhomecare.vercel.app/services' },
         { '@type': 'ListItem', position: 3, name: service.title },
       ] },
     ],

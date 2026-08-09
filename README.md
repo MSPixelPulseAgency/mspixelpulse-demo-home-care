@@ -2,7 +2,7 @@
 
 A premium, responsive home care / senior care website built by MSPixelPulse as a portfolio and sales demonstration. The experience is intentionally warm, editorial and senior-friendly, with original brand assets, a configurable content model, non-medical service language and conversion-focused forms.
 
-**Production:** https://mspixelpulse-demo-home-care.vercel.app
+**Production:** https://serenityhomecare.vercel.app
 
 **Repository:** https://github.com/MSPixelPulseAgency/mspixelpulse-demo-home-care
 

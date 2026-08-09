@@ -4,13 +4,13 @@
 
 ## Primary pages
 
-- [Home](https://mspixelpulse-demo-home-care.vercel.app/)
-- [About](https://mspixelpulse-demo-home-care.vercel.app/about)
-- [Services](https://mspixelpulse-demo-home-care.vercel.app/services)
-- [Service areas](https://mspixelpulse-demo-home-care.vercel.app/service-areas)
-- [Resources](https://mspixelpulse-demo-home-care.vercel.app/resources)
-- [Request care](https://mspixelpulse-demo-home-care.vercel.app/request-care)
-- [Contact](https://mspixelpulse-demo-home-care.vercel.app/contact)
+- [Home](https://serenityhomecare.vercel.app/)
+- [About](https://serenityhomecare.vercel.app/about)
+- [Services](https://serenityhomecare.vercel.app/services)
+- [Service areas](https://serenityhomecare.vercel.app/service-areas)
+- [Resources](https://serenityhomecare.vercel.app/resources)
+- [Request care](https://serenityhomecare.vercel.app/request-care)
+- [Contact](https://serenityhomecare.vercel.app/contact)
 
 ## Content guidance
 

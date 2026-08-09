@@ -13,7 +13,7 @@ export const siteConfig = {
   hours: 'Monday – Friday, 8:00 AM – 6:00 PM',
   serviceAreaLabel: 'Dayton & Surrounding Communities',
   socialLinks: [],
-  siteUrl: 'https://mspixelpulse-demo-home-care.vercel.app',
+  siteUrl: 'https://serenityhomecare.vercel.app',
   formDeliveryConfigured: false,
   credentials: [],
   demoNotice: 'Demonstration website. Business details and testimonials are placeholders pending client approval.',
