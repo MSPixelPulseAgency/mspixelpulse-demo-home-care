@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" role="img" aria-labelledby="title">
+  <title id="title">Serenity Home Care mark</title>
+  <defs><linearGradient id="g" x1="10" y1="8" x2="62" y2="66" gradientUnits="userSpaceOnUse"><stop stop-color="#84649e"/><stop offset="1" stop-color="#49345e"/></linearGradient></defs>
+  <rect width="72" height="72" rx="24" fill="url(#g)"/>
+  <path d="M17 37.5 36 19l19 18.5" fill="none" stroke="#fffaf5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M23 34.5v15.2c0 3.4 2.7 6.1 6.1 6.1h13.8c3.4 0 6.1-2.7 6.1-6.1V34.5" fill="none" stroke="#fffaf5" stroke-width="4.6" stroke-linecap="round"/>
+  <path d="M36 49.6c-1.2-2.2-7.2-5.2-7.2-10.2 0-4.8 6.1-6.6 7.2-2.2 1.1-4.4 7.2-2.6 7.2 2.2 0 5-6 8-7.2 10.2Z" fill="#d9c08f"/>
+</svg>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://serenity-home-care-demo.vercel.app/sitemap.xml
