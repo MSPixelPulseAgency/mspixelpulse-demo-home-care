@@ -1,0 +1,17 @@
+# Serenity Home Care
+
+> Serenity Home Care is a clearly labeled demonstration website for a configurable non-medical home care provider in Dayton and surrounding communities. Business credentials, service availability, employment details, testimonials, and operating claims must be verified before a client launch.
+
+## Primary pages
+
+- [Home](https://mspixelpulse-demo-home-care.vercel.app/)
+- [About](https://mspixelpulse-demo-home-care.vercel.app/about)
+- [Services](https://mspixelpulse-demo-home-care.vercel.app/services)
+- [Service areas](https://mspixelpulse-demo-home-care.vercel.app/service-areas)
+- [Resources](https://mspixelpulse-demo-home-care.vercel.app/resources)
+- [Request care](https://mspixelpulse-demo-home-care.vercel.app/request-care)
+- [Contact](https://mspixelpulse-demo-home-care.vercel.app/contact)
+
+## Content guidance
+
+Educational content is general information only and is not medical, legal, or professional advice. Contact forms require server-side email configuration before accepting production leads.

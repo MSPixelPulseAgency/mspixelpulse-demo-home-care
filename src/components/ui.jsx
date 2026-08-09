@@ -25,6 +25,7 @@ export function Picture({ image, eager = false, className = '', sizes = '(max-wi
     <img
       className={className}
       src={image.src}
+      srcSet={image.srcSet}
       alt={image.alt}
       width="1200"
       height="900"

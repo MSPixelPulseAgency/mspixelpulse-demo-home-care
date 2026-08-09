@@ -16,7 +16,7 @@ export function ServicesGrid({ limit }) {
     const Icon = service.icon
     return <article className={`service-card${index < 2 ? ' service-card--featured' : ''}`} key={service.slug}>
       {index < 2 && <Picture image={service.image} />}
-      <div className="service-card__body"><span className="service-card__icon"><Icon aria-hidden="true" /></span><h3>{service.title}</h3><p>{service.short}</p><Link to={`/services/${service.slug}`} aria-label={`Learn about ${service.title}`}>Explore service <ArrowRight aria-hidden="true" /></Link></div>
+      <div className="service-card__body"><span className="service-card__icon"><Icon aria-hidden="true" /></span><h3>{service.title}</h3><p>{service.short}</p><Link to={`/services/${service.slug}`} aria-label={`Explore service: ${service.title}`}>Explore service <ArrowRight aria-hidden="true" /></Link></div>
     </article>
   })}</div>
 }

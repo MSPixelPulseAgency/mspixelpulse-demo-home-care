@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://serenity-home-care-demo.vercel.app/sitemap.xml
+Sitemap: https://mspixelpulse-demo-home-care.vercel.app/sitemap.xml

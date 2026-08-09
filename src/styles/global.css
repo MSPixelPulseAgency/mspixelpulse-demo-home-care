@@ -1,4 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap');
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/dm-serif-display-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/dm-serif-display-italic-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('/fonts/manrope-latin.woff2') format('woff2');
+}
 
 *, *::before, *::after { box-sizing: border-box; }
 html { overflow-x: clip; scroll-behavior: smooth; scroll-padding-top: 110px; }
@@ -109,7 +129,7 @@ p { color: var(--color-muted); }
 .intro-images { position: relative; min-height: 620px; }
 .intro-images > img:first-child { position: absolute; inset: 0 auto auto 0; width: 76%; height: 560px; object-fit: cover; object-position: center 20%; border-radius: 38px 120px 38px 38px; box-shadow: var(--shadow-soft); }
 .intro-images > img:nth-child(2) { position: absolute; z-index: 2; right: 0; bottom: 0; width: 43%; height: 280px; object-fit: cover; border: 10px solid var(--color-warm-white); border-radius: 28px; box-shadow: var(--shadow-floating); }
-.image-word { position: absolute; z-index: 3; left: 0; bottom: -1rem; color: rgba(112,81,138,.11); font-family: var(--font-heading); font-size: clamp(4rem, 8vw, 7rem); font-style: italic; line-height: 1; }
+.image-word { position: absolute; z-index: 3; left: 0; bottom: -1rem; color: #806d8a; font-family: var(--font-heading); font-size: clamp(4rem, 8vw, 7rem); font-style: italic; line-height: 1; }
 .intro-content .check-list { margin-bottom: 2rem; }
 
 .services-section, .service-overview { background: var(--color-cream); }
