@@ -4,6 +4,8 @@ A premium, responsive home care / senior care website built by MSPixelPulse as a
 
 **Production:** https://mspixelpulse-demo-home-care.vercel.app
 
+**Repository:** https://github.com/MSPixelPulseAgency/mspixelpulse-demo-home-care
+
 > Demonstration project: company details, service availability, credentials, testimonials and policies must be verified and replaced before use by a real care provider.
 
 ## Brand concept
