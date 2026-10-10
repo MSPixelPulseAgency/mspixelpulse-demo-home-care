@@ -104,7 +104,8 @@ Designed and developed as a demonstration by [MSPixelPulse Web Solutions](https:
 ## Website and demo management
 
 - **Live Website:** [https://homecare.mspixelpulse.com](https://homecare.mspixelpulse.com)
+- **Original Vercel URL (fallback):** [https://serenityhomecare.vercel.app](https://serenityhomecare.vercel.app)
 - **MSPixelPulse Projects:** [MSPixelPulse Projects](https://mspixelpulse.com/projects)
 - **Aurelion Demo Library:** [Private Demo Management — Owner Access Required](https://mahakpatel.com/play/ai?view=demo-library)
 
-Category subdomains are not published here until their HTTPS website is verified. The Aurelion link is an owner-only management interface and does not grant access.
+The category subdomain is the primary public demo link; the original Vercel address stays available as a fallback. The Aurelion link is an owner-only management interface and does not grant access.
