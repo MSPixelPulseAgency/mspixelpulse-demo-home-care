@@ -100,3 +100,11 @@ Future agents must read the relevant files in `.ai-agents/` before editing. Pres
 ## Credit
 
 Designed and developed as a demonstration by [MSPixelPulse Web Solutions](https://mspixelpulse.com).
+
+## Website and demo management
+
+- **Live Website:** [https://homecare.mspixelpulse.com](https://homecare.mspixelpulse.com)
+- **MSPixelPulse Projects:** [MSPixelPulse Projects](https://mspixelpulse.com/projects)
+- **Aurelion Demo Library:** [Private Demo Management — Owner Access Required](https://mahakpatel.com/play/ai?view=demo-library)
+
+Category subdomains are not published here until their HTTPS website is verified. The Aurelion link is an owner-only management interface and does not grant access.
