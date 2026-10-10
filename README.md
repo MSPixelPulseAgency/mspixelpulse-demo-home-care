@@ -100,3 +100,12 @@ Future agents must read the relevant files in `.ai-agents/` before editing. Pres
 ## Credit
 
 Designed and developed as a demonstration by [MSPixelPulse Web Solutions](https://mspixelpulse.com).
+
+## Website and demo management
+
+- **Live Website:** [https://homecare.mspixelpulse.com](https://homecare.mspixelpulse.com)
+- **Original Vercel URL (fallback):** [https://serenityhomecare.vercel.app](https://serenityhomecare.vercel.app)
+- **MSPixelPulse Projects:** [MSPixelPulse Projects](https://mspixelpulse.com/projects)
+- **Aurelion Demo Library:** [Private Demo Management — Owner Access Required](https://mahakpatel.com/play/ai?view=demo-library)
+
+The category subdomain is the primary public demo link; the original Vercel address stays available as a fallback. The Aurelion link is an owner-only management interface and does not grant access.
