@@ -1,3 +1,4 @@
+import { forwardToAurelion } from './_aurelion.js'
 const attempts = new Map()
 const WINDOW_MS = 60_000
 const MAX_REQUESTS = 5
@@ -33,12 +34,16 @@ export default async function handler(request, response) {
   const errors = validate(body)
   if (errors.length) return response.status(400).json({ message: errors[0] })
 
+  const safeType = ['care', 'contact', 'career'].includes(body.formType) ? body.formType : 'website'
+  // Primary path: the central MSPixelPulse inquiry pipeline (saved first, then the owner is emailed). Resend is an
+  // optional extra copy when configured; it is never required. Demo site: no care plan, visit or hire is created.
+  const extras = Object.fromEntries(Object.entries(body).filter(([key, value]) => !['website', 'consent', 'name', 'phone', 'email', 'message', 'formType', 'clientId', 'pageUrl'].includes(key) && typeof value === 'string' && value).map(([key, value]) => [key.replace(/[^a-zA-Z0-9_ -]/g, '').slice(0, 40), clean(value, 300)]))
+  const forwarded = await forwardToAurelion(request, { formType: safeType === 'care' ? 'consultation' : safeType === 'career' ? 'career' : 'contact', clientId: clean(body.clientId, 80), name: clean(body.name, 200), email: clean(body.email, 180), phone: clean(body.phone, 40), message: clean(body.message, 10000), details: extras, pageUrl: clean(body.pageUrl, 2000) })
+  if (!forwarded.ok) return response.status(forwarded.status).json({ message: forwarded.error })
   const apiKey = process.env.RESEND_API_KEY
   const to = process.env.FORM_RECIPIENT_EMAIL
   const from = process.env.FORM_FROM_EMAIL
-  if (!apiKey || !to || !from) return response.status(503).json({ message: 'Secure form delivery is not connected on this demonstration yet.' })
-
-  const safeType = ['care', 'contact', 'career'].includes(body.formType) ? body.formType : 'website'
+  if (!apiKey || !to || !from) return response.status(200).json({ ok: true, inquiryId: forwarded.inquiryId })
   const rows = Object.entries(body)
     .filter(([key, value]) => !['website', 'consent'].includes(key) && value)
     .map(([key, value]) => `<tr><th style="padding:8px;text-align:left;vertical-align:top">${escapeHtml(key)}</th><td style="padding:8px">${escapeHtml(value)}</td></tr>`)
@@ -52,11 +57,11 @@ export default async function handler(request, response) {
     })
     if (!resendResponse.ok) {
       console.error('Email provider rejected the request', resendResponse.status)
-      return response.status(502).json({ message: 'The message could not be delivered right now.' })
+      return response.status(200).json({ ok: true, inquiryId: forwarded.inquiryId, emailCopy: 'failed' })
     }
-    return response.status(200).json({ ok: true })
+    return response.status(200).json({ ok: true, inquiryId: forwarded.inquiryId })
   } catch (error) {
-    console.error('Lead delivery failed', error instanceof Error ? error.message : 'Unknown error')
-    return response.status(500).json({ message: 'The message could not be delivered right now.' })
+    console.error('Lead email copy failed', error instanceof Error ? error.message : 'Unknown error')
+    return response.status(200).json({ ok: true, inquiryId: forwarded.inquiryId, emailCopy: 'failed' })
   }
 }
