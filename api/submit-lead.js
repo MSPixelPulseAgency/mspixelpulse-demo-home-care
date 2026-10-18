@@ -23,8 +23,8 @@ export default async function handler(request, response) {
   const body = request.body || {}
   if (body.website) return response.status(200).json({ ok: true })
 
-  const forwarded = request.headers['x-forwarded-for']
-  const ip = (Array.isArray(forwarded) ? forwarded[0] : forwarded || request.socket?.remoteAddress || 'unknown').split(',')[0]
+  const forwardedFor = request.headers['x-forwarded-for']
+  const ip = (Array.isArray(forwardedFor) ? forwardedFor[0] : forwardedFor || request.socket?.remoteAddress || 'unknown').split(',')[0]
   const now = Date.now()
   const previous = attempts.get(ip) || []
   const recent = previous.filter((timestamp) => now - timestamp < WINDOW_MS)
